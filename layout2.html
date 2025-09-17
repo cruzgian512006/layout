@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>Layout 2</title>
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    body { 
+      height: 100vh; 
+      display: flex; 
+      flex-direction: column; 
+      background: black; 
+      padding: 20px; 
+      padding: 15px;
+      gap: 15px; 
+    }
+    header, footer, aside {
+      background-color: brown;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    header, footer {
+      height: 50px;
+    }
+    aside {
+      width: 200px;
+    }
+
+    main { 
+      flex: 1;
+       display: flex; 
+       gap: 15px;
+       }
+    .content { 
+      flex: 2; 
+      display: flex; 
+      flex-direction: column; 
+      gap: 15px; 
+    }
+    .left, .right {
+      flex: 1; 
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: blue;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content">
+      <header>layout2</header>
+      <div style="display: flex; gap: 15px; flex: 1;">
+        <div class="left">
+          <h2></h2>
+          <a href="layout1.html" class="button">Go to Layout 1</a>
+        </div>
+        <div class="right">
+          <h2></h2>
+          <a href="layout3.html" class="button">Go to Layout 3</a>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+    <aside></aside>
+  </main>
+</body>
+</html>

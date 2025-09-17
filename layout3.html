@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+  <title>Layout 3</title>
+  <style>
+    * { margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+     }
+    body { 
+      height: 100vh; 
+      display: flex; 
+      flex-direction: column; 
+      background: #c1bbbbf2; 
+      padding: 15px; 
+      gap: 15px; 
+    }
+
+      header, nav, footer {
+      color: #fff;
+      background-color: brown;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+    }
+    
+    .avatar, .footer-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid black;
+      flex-shrink: 0;
+    }
+
+  
+    
+    .header-row, .footer-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    nav {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    main { 
+      flex: 1; 
+      display: flex; 
+      gap: 15px; 
+    }
+
+    .left {
+      width: 550px;
+      flex: 0 0 550px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    } 
+
+    .right {
+      flex: 1; 
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: blue;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-row">
+    <div class="avatar"></div>
+    <header>Layout3</header>
+  </div>
+
+  <nav></nav>
+
+  <main>
+    <div class="left">
+      <h2></h2>
+      <a href="layout1.html" class="button">Go to Layout 1</a>
+    </div>
+    <div class="right">
+      <h2></h2>
+      <a href="layout2.html" class="button">Go to Layout 2</a>
+    </div>
+  </main>
+
+  <div class="footer-row">
+    <footer></footer>
+    <div class="footer-avatar"></div>
+  </div>
+</body>
+</html>

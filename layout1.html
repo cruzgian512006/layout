@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <title>Layout 1</title>
+  <style>
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+body { 
+  height: 100%; 
+  font-family: Arial, sans-serif;
+   background: #f7f7f7; 
+   padding: 20px;
+  
+}
+
+.layout1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: calc(100vh - 40px); 
+}
+
+header {
+  flex: 0 0 80px;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: blue;
+  color: #fff;
+}
+
+.content-row {
+  display: flex;
+  gap: 12px;
+  flex: 1;        
+  min-height: 0;  
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: blue;
+  color: #111;
+  overflow: auto;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0; 
+}
+
+.topbar {
+  flex: 0 0 48px;
+  border-radius: 8px;
+  background-color: brown;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+footer {
+  flex: 0 0 60px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    .btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      background-color: blue;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="layout1">
+    <header>Layout1</header>
+
+    <div class="content-row">
+      <aside class="sidebar"></aside>
+
+      <div class="content">
+        <div class="topbar"></div>
+        <main class="main">
+          <div class="btn-group">
+            <a href="layout2.html" class="btn">Go to Layout 2</a>
+            <a href="layout3.html" class="btn">Go to Layout 3</a>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
