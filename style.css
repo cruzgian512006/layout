@@ -1,0 +1,47 @@
+/* style.css */
+body {
+  background-color: #f4f7fa; /* Light gray-blue for the whole page */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.calendar {
+  background-color: #ffffff; /* White background for calendar container */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.month {
+  margin-bottom: 40px;
+}
+
+.month h2 {
+  text-align: center;
+  background-color: #4CAF50; /* Green header for months */
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #eee;
+}
+
+.holiday {
+  color: red;
+  font-weight: bold;
+}
